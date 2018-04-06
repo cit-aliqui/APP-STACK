@@ -75,9 +75,11 @@ Open `conf/context.xml` and add the following content just before the last line.
                maxActive="50" maxIdle="30" maxWait="10000"
                username="student" password="student@1"
                driverClassName="com.mysql.jdbc.Driver"
-               url="jdbc:mysql://localhost:3306/studentapp"/>
+               url="jdbc:mysql://10.142.0.7:3306/studentapp"/>
 
 ```
+
+Note: IP `10.142.0.7` is DB server IP address, If you are using same host then give the IP address of that host, but not `localhost`
 
 #### 4. Start your tomcat
 ```
