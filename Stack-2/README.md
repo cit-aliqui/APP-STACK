@@ -16,11 +16,17 @@
 ## 2. Install Tomcat. (Application we are using springboot)
 
 ```
+# yum install maven -y
+# cd /tmp
+# wget https://github.com/cit-aliqui/APP-STACK/raw/master/Stack-2/rdp_api.zip 
+# unzip rdp_api.zip 
+# cd rdp_api
+# mvn clean package
 # cd /root
 # wget -q -O- http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.6/bin/apache-tomcat-9.0.6.tar.gz | tar -xz
 # cd /root/apache-tomcat-9.0.6
 # rm -rf webapps/*
-# wget XYZ -O webapps/rdp-api.war
+# cp /tmp/rdp_api/target/rdp-api.war webapps/rdp-api.war
 # sh bin/startup.sh
 ```
 
@@ -56,3 +62,9 @@ worker.local.port=8009
 
 Update Public IP address of your server in `rdportal/js/config.js`
 
+```
+# cat  config.js 
+angular.module('myApp.config', []).constant('configData',{
+    "url":'http://35.231.155.172/rdp-api/'
+});
+```
