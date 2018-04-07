@@ -57,7 +57,7 @@ worker.local.port=8009
 # systemctl restart httpd
 # cd /var/www/html
 # wget https://github.com/cit-aliqui/APP-STACK/raw/master/Stack-2/rdportal.zip 
-# uzip rdportal.zip
+# unzip rdportal.zip
 ```
 
 Update Public IP address of your server in `rdportal/js/config.js`
