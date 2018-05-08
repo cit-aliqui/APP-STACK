@@ -1,0 +1,17 @@
+[{  
+      "tmdb_id":231576,
+      "imdb_id":"tt2870708",
+      "title":"Wish I Was Here",
+      "overview":"Something, something, dark side.",
+      "poster":"/8b54J6gCM27QodPBoBWAcC9JHnd.jpg", // TMDb poster path
+      "released_utc_ms":1389999600000,
+      "runtime_min":120,
+      "in_collection":false,
+      "in_watchlist":true,
+      "watched":false
+   }
+{   
+   "name" : 'ACME',
+   "shares" : 100,
+   "price" : 542.23
+}]
