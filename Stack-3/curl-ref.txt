@@ -1,0 +1,123 @@
+1) http://localhost:8080/CustomWebApp/student -- POST
+
+Request : 
+{
+	  "studentName": "Meghan Mahadev",
+      "studentAddr": "Hyderabad",
+      "studentAge": "2",
+      "studentQulaification": "Nursary",
+      "studentPercent": "99%",
+      "studentYearPassword": "2017"
+    }
+	
+Response : 
+
+{
+    "httpStatus": 201,
+    "status": true,
+    "data": {
+        "message": "Student Saved Successfully",
+        "object": {
+            "student_id": 7,
+            "studentName": "Meghan Mahadev",
+            "studentAddr": "Hyderabad",
+            "studentAge": "2",
+            "studentQulaification": "Nursary",
+            "studentPercent": "99%",
+            "studentYearPassword": "2017"
+        }
+    }
+}
+
+2) http://localhost:8080/CustomWebApp/student -- PUT
+
+Request : 
+{
+	"student_id": 7,
+	  "studentName": "Master Meghan Mahadev",
+      "studentAddr": "Hyderabad",
+      "studentAge": "2",
+      "studentQulaification": "Nursary",
+      "studentPercent": "99%",
+      "studentYearPassword": "XXXX"
+    }
+	
+Response : 
+{
+    "httpStatus": 200,
+    "status": true,
+    "data": {
+        "message": "Student Updated Successfully",
+        "object": {
+            "student_id": 7,
+            "studentName": "Master Meghan Mahadev",
+            "studentAddr": "Hyderabad",
+            "studentAge": "2",
+            "studentQulaification": "Nursary",
+            "studentPercent": "99%",
+            "studentYearPassword": "XXXX"
+        }
+    }
+}
+
+3) http://localhost:8080/CustomWebApp/student/2 -- GET
+{
+  "httpStatus": 200,
+  "status": true,
+  "data": {
+    "object": {
+      "student_id": 2,
+      "studentName": "Srinivasulu Kummitha",
+      "studentAddr": "Hyderabad",
+      "studentAge": "30",
+      "studentQulaification": "MCA",
+      "studentPercent": "99%",
+      "studentYearPassword": "2010"
+    }
+  }
+}
+4) http://localhost:8080/CustomWebApp/student/list  -- GET
+{
+  "httpStatus": 200,
+  "status": true,
+  "data": {
+    "objects": [
+      {
+        "student_id": 2,
+        "studentName": "Srinivasulu Kummitha",
+        "studentAddr": "Hyderabad",
+        "studentAge": "30",
+        "studentQulaification": "MCA",
+        "studentPercent": "99%",
+        "studentYearPassword": "2010"
+      },
+      {
+        "student_id": 4,
+        "studentName": "Harsha",
+        "studentAddr": "kavali",
+        "studentAge": "28",
+        "studentQulaification": "Btech",
+        "studentPercent": "99%",
+        "studentYearPassword": "2008"
+      },
+      {
+        "student_id": 5,
+        "studentName": "Bala",
+        "studentAddr": "NELLORE",
+        "studentAge": "28",
+        "studentQulaification": "Btech",
+        "studentPercent": "99%",
+        "studentYearPassword": "2008"
+      },
+      {
+        "student_id": 6,
+        "studentName": "Ashok ",
+        "studentAddr": "Jubilee Hills",
+        "studentAge": "27",
+        "studentQulaification": "MBA",
+        "studentPercent": "100%",
+        "studentYearPassword": "2014"
+      }
+    ]
+  }
+}
